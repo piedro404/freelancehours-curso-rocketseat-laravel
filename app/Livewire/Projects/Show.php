@@ -10,10 +10,10 @@ class Show extends Component
 
     public Project $project;
 
-    public function mount($p)
+    public function mount($project_id)
     {
 
-        $this->project = Project::find($p);
+        $this->project = Project::find($project_id);
 
     }
 

@@ -2,6 +2,9 @@
 
     components livewire show
 
-    @dump($project)
+    <pre>
+        title: {{ $project->title }}
+        description: {!! html_entity_decode($project->description) !!}
+    </pre>
 
 </div>
