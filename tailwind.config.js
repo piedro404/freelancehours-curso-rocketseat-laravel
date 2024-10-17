@@ -8,9 +8,9 @@ export default {
     theme: {
         extend: {
             font: {
-                sans: ['Segoe UI', 'sans-sarif']
+                sans: ['Segoe UI', 'Roboto', 'sans-serif'],
             }
         },
-    },
-    plugins: [],
+      },
+      plugins: [],
 };
