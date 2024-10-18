@@ -1,6 +1,7 @@
+@props(['proposals'])
 <x-ui.card>
     <div class="flex items-center justify-between pb-4">
-        <div class="flex flex-col ">
+        <div class="flex flex-col">
             <h2 class="text-[20px] text-white leading-9">
                 Propostas
             </h2>
@@ -16,7 +17,7 @@
 
     <div class="py-4">
         <div class="flex flex-col gap-7">
-            @foreach(array_slice($proposals,0,10) as $proposal)
+            @foreach($proposals->take(10) as $proposal)
                 <x-proposals.item :$proposal :position="$loop->index"/>
             @endforeach
         </div>
