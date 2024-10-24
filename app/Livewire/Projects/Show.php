@@ -7,14 +7,11 @@ use Livewire\Component;
 
 class Show extends Component
 {
-
     public Project $project;
 
-    public function mount($project_id)
+    public function mount(Project $project)
     {
-
-        $this->project = Project::find($project_id);
-
+        $this->project = $project;
     }
 
     public function render()
@@ -22,3 +19,4 @@ class Show extends Component
         return view('livewire.projects.show');
     }
 }
+
